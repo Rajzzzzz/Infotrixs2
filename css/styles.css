@@ -30,11 +30,13 @@ h3{
 
 }
 .bottom-cloud{
-  position: absolute;
+  position: relative;
+  padding-right: 350px;
+
 }
 .top-cloud{
   position: absolute;
-  padding-left: 200px;
+  padding-left: 100px;
 }
 .my{
   height: 200px;
@@ -65,4 +67,11 @@ h3{
 }
 p{
   font-style: bold;
+}
+.mountain{
+  width: 50%;
+}
+.copyright{
+  border-bottom-width: 0px;
+   margin-bottom: 0px;
 }
