@@ -35,8 +35,9 @@ h3{
 
 }
 .top-cloud{
-  position: absolute;
-  padding-left: 100px;
+  position: relative;
+  padding-left: 300px;
+  padding-top: 50px;
 }
 .my{
   height: 200px;
