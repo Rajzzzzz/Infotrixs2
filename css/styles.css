@@ -6,7 +6,7 @@ body{
 h1{
   color: #66bfbf;
   font-size: 5.625rem;
-  margin:50px auto 0 auto;
+
   padding-top: 75px;
   font-family: 'Sacramento', cursive;
 }
@@ -22,7 +22,7 @@ h3{
 }
 .top-container{
   background-color:#E4F9F5;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .middle-container{
 }
