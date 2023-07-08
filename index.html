@@ -1,71 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunny Website</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="imageedit_5_2648308304.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navigation-container">
-      <a href="#skills-section">Skills</a>
-      <a href="#about-section">About</a>
-    </div>
-    <div class="top-container">
-      <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-      <h1>I'm Raj</h1>
-      <h2>a programmer.</h2>
-      <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-      <img class="mountain" src="images/mountain.png" alt="mountain-img">
-    </div>
-    <div id="skills-section" class="middle-container">
-      <div class="profile">
-        <img class="my" src="images/using.jpeg" alt="Rajeshwar Profile Picture">
-        <h2>Hello.</h2>
-        <p>I am a Web Developer. I'm the founder of my Own Rules. I❤️Coffee and brew my own beers</p>
-      </div>
-      <hr>
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="myy" src="images/download.jpeg" alt="my skills">
-          <h3>Design & Development</h3>
-          <p>I started learning to code when I was 16 years old because I wanted to make my own video games.Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
-        </div>
-        <div class="skill-row">
-          <img class="mmy" src="images/chess.jpeg" alt="chess king">
-          <h3>Chess Challenge</h3>
-          <p>But my best skill is actually playing chess. I am the undisputed king of chess challenges. I have my own moves for winning the challenges.</p>
-        </div>
-      </div>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunny Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="imageedit_5_2648308304.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    /* Add the CSS styles for the navigation container and buttons */
+    .navigation-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+    }
+
+    .navigation-container a {
+      display: inline-block;
+      margin-left: 10px;
+      padding: 10px 15px;
+      background-color: #66bfbf;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    // Add the JavaScript functions to scroll to the sections
+    document.addEventListener('DOMContentLoaded', function() {
+      var skillsButton = document.getElementById('skills-button');
+      var aboutButton = document.getElementById('about-button');
+
+      skillsButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        var skillsSection = document.getElementById('skills-section');
+        skillsSection.scrollIntoView({ behavior: 'smooth' });
+      });
+
+      aboutButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        var aboutSection = document.getElementById('about-section');
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>I'm Raj</h1>
+    <h2>a programmer.</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
+  </div>
+  <div id="skills-section" class="middle-container">
+    <div class="profile">
+      <img class="my" src="images/using.jpeg" alt="Rajeshwar Profile Picture">
+      <h2>Hello.</h2>
+      <p>I am a Web Developer. I'm the founder of my Own Rules. I❤️Coffee and brew my own beers</p>
     </div>
     <hr>
-    <div id="about-section" class="middle-container">
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>Do you love playing chess.</h3>
-        <p>Let's talk about chess and the tricky moves! We can also talk about code as well.</p>
-        <a class="btn" href="mailto:rajeshwarraj800@gmail.com">CONTACT ME</a>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="myy" src="images/download.jpeg" alt="my skills">
+        <h3>Design & Development</h3>
+        <p>I started learning to code when I was 16 years old because I wanted to make my own video games.Over time, I have gained a wealth of experience designing and developing mobile and web applications.</p>
+      </div>
+      <div class="skill-row">
+        <img class="mmy" src="images/chess.jpeg" alt="chess king">
+        <h3>Chess Challenge</h3>
+        <p>But my best skill is actually playing chess. I am the undisputed king of chess challenges. I have my own moves for winning the challenges.</p>
       </div>
     </div>
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.instagram.com/raj_official_2001_/">Instagram</a>
-      <a class="footer-link" href="https://m.facebook.com/rajeshwar.kumargiri">Facebook</a>
-      <a class="footer-link" href="">Website</a>
-      <p class="copyright">©2023 Rajeshwar Kumar Giri @raj_official_2001_.</p>
+  </div>
+  <hr>
+  <div id="about-section" class="middle-container">
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>Do you love playing chess?</h3>
+      <p>Let's talk about chess and the tricky moves! We can also talk about coding as well.</p>
+      <a class="btn" href="mailto:rajeshwarraj800@gmail.com">CONTACT ME</a>
     </div>
-    <script>
-      var contactButton = document.querySelector('.btn');
-      contactButton.addEventListener('click', function() {
-        alert('Thank you for contacting me!');
-      });
-      var profileImage = document.querySelector('.my');
-      profileImage.addEventListener('click', function() {
-        profileImage.classList.toggle('rotate');
-      });
-    </script>
-  </body>
+  </div>
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.instagram.com/raj_official_2001_/">Instagram</a>
+    <a class="footer-link" href="https://m.facebook.com/rajeshwar.kumargiri">Facebook</a>
+    <a class="footer-link" href="">Website</a>
+    <p class="copyright">©2023 Rajeshwar Kumar Giri @raj_official_2001_.</p>
+  </div>
+
+  <!-- Add the navigation buttons within the existing container -->
+  <div class="navigation-container">
+    <a id="skills-button" href="#">Skills</a>
+    <a id="about-button" href="#">About</a>
+  </div>
+
+  <script>
+    var contactButton = document.querySelector('.btn');
+    contactButton.addEventListener('click', function() {
+      alert('Thank you for contacting me!');
+    });
+    var profileImage = document.querySelector('.my');
+    profileImage.addEventListener('click', function() {
+      profileImage.classList.toggle('rotate');
+    });
+  </script>
+</body>
+
 </html>
