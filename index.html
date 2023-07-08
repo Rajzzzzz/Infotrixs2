@@ -7,6 +7,25 @@
     <link rel="icon" href="imageedit_5_2648308304.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <script>
+    // Function to display an alert when the "CONTACT ME" button is clicked
+    var contactButton = document.querySelector('.btn');
+    contactButton.addEventListener('click', function() {
+      alert('Thank you for contacting me!');
+    });
+
+    // Function to toggle a class on the profile image when clicked
+    var profileImage = document.querySelector('.my');
+    profileImage.addEventListener('click', function() {
+      profileImage.classList.toggle('rotate');
+    });
+
+    // Function to change the color of the h1 heading randomly when the page is loaded
+    var heading1 = document.querySelector('h1');
+    var colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+    var randomIndex = Math.floor(Math.random() * colors.length);
+    heading1.style.color = colors[randomIndex];
+  </script>
   </head>
   <body>
     <div class="top-container">
